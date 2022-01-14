@@ -4,10 +4,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
   font-family: 'Roboto Condensed', arial, sans-serif;
 }
 
 .App{
+  position: relative;
   min-height: 100vh;
+  background-image: url("../img/bgc2.jpg");
+  background-size: cover;
+}
+
+.chessboard{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
