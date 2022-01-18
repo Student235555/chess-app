@@ -37,10 +37,15 @@ export default function PlayRandomMoveEngine() {
     return true;
   }
 
+  const handleClick = () =>{
+    setGame(new Chess())
+  }
+
   return (
     <div className="App">
       <div className='chessboard'>
         <Chessboard id="BasicBoard" position={game.fen()} onPieceDrop={onDrop}/>
+        <button className='resetBtn' onClick={handleClick}>restart</button>
       </div>
     </div>
   );
